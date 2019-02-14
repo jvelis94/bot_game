@@ -81,7 +81,7 @@ table {
     }
     
     .instruction-numbers {
-        font-size: 2.5rem;
+        font-size: 1.75rem;
         padding-right: 20px;
         color: #00ffff
     }
@@ -89,7 +89,7 @@ table {
     .instruction-content {
         color: #ffffff;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.25rem;
+        font-size: 1.0rem;
     }
     
     #play-button {
@@ -121,7 +121,7 @@ table {
     .instruction-content {
         color: #ffffff;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.25rem;
+        font-size: 1.0rem;
     }
     
     #play-button {
@@ -146,7 +146,7 @@ table {
     }
     
     .instruction-numbers {
-        font-size: 2.5rem;
+        font-size: 1.75rem;
         padding-right: 20px;
         color: #00ffff
     }
@@ -154,7 +154,7 @@ table {
     .instruction-content {
         color: #ffffff;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.25rem;
+        font-size: 1.0rem;
     }
     
     #play-button {
