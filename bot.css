@@ -70,8 +70,9 @@ table {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     align-items: center;
-    padding: 20px 0px;
+    padding: 10px 0px;
     cursor: pointer;
+    font-size: .9rem;
 }
 
 tr {
@@ -107,7 +108,6 @@ tr {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-align: center;
         align-items: center;
-        padding: 20px 0px;
     }
 }
 
@@ -140,7 +140,6 @@ tr {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-align: center;
         align-items: center;
-        padding: 20px 0px;
     }
     
 }
@@ -179,7 +178,6 @@ tr {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-align: center;
         align-items: center;
-        padding: 15px 0px;
         font-size: .80rem;
     }
     
