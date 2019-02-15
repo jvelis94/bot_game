@@ -24,11 +24,11 @@ let isBot = (door) => {
 let playOn = (door) => {
     doorCount--;
     if(doorCount === 0){
-        buttonChange.innerHTML = "<p>You win!</p>"
+        buttonChange.innerHTML = "<p>You win! Play Again?</p>"
         currentlyPlaying = false;
     }
     else if (isBot(door)){
-        buttonChange.innerHTML = "<p>Game is over</p>"
+        buttonChange.innerHTML = "<p>Game Over. Try Again?</p>"
         currentlyPlaying = false;
     }
 }
