@@ -144,7 +144,7 @@ tr {
     
 }
 
-@media (max-width: 600px) {
+@media (max-width: 375px) {
     .instructions {
         text-align: center;
         padding: 20px 0px;
