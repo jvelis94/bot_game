@@ -41,24 +41,25 @@ table {
 }
 
 .game-doors {
-    width: 99.9%;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     padding: 40px 0;
 }
 
 #door1 {
-    padding: 0 10px; 
+    padding: 0 7px; 
     cursor: pointer;
 }
 
 #door2 {
-    padding: 0 10px; 
+    padding: 0 7px; 
     cursor: pointer;
 }
 
 #door3 {
-    padding: 0 10px; 
+    padding: 0 7px; 
     cursor: pointer;
 }
 
