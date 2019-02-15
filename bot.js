@@ -12,51 +12,48 @@ let door3Image;
 let buttonChange = document.getElementById('play-button');
 let currentlyPlaying = true;
 
-
-door1.onclick = () => {
-    doorCount--;
-    door1.src = door1Image;
-    if (door1Image === botDoorPath){
-        buttonChange.innerHTML = "<p>You lost! Try Again?</p>"
+let isBot = (door) => {
+    if (door.src === botDoorPath){
+        return true;
     }
     else {
-        buttonChange.innerHTML = "<p>Keep going!</p>"
+        return false;
+    }
+}
+
+let playOn = (door) => {
+    doorCount--;
+    if(doorCount === 0){
+        buttonChange.innerHTML = "<p>You win!</p>"
+        currentlyPlaying = false;
+    }
+    else if (isBot(door)){
+        buttonChange.innerHTML = "<p>Game is over</p>"
+        currentlyPlaying = false;
+    }
+}
+
+
+door1.onclick = () => {
+    if (currentlyPlaying === true){
+    door1.src = door1Image;
+    playOn(door1);
     }
 }
 
 door2.onclick = () => {
-    doorCount--;
+    if (currentlyPlaying === true){
     door2.src = door2Image;
-    if (door2Image === botDoorPath){
-        buttonChange.innerHTML = "<p>You lost! Try Again?</p>"
-    }
-    else {
-        buttonChange.innerHTML = "<p>Keep going!</p>"
+    playOn(door2);
     }
 }
 
 door3.onclick = () => {
-    doorCount--;
+    if (currentlyPlaying === true){
     door3.src = door3Image;
-    if (door3Image === botDoorPath){
-        buttonChange.innerHTML = "<p>You lost! Try Again?</p>"
-    }
-    else {
-        buttonChange.innerHTML = "<p>Keep going!</p>"
+    playOn(door3);
     }
 }
-
-let continuePlay = () => {
-    if (doorCount === 0){
-        door1Image = closedDoorPath;
-        door2Image = closedDoorPath;
-        door3Image = closedDoorPath;
-        buttonChange.innerHTML = "<p>Good Luck!</p>"
-    }
-
-}
-
-
 
 let randomDoorNumber = () => {
     botDoor = Math.floor(Math.random() * doorCount);
@@ -78,6 +75,20 @@ let randomDoorNumber = () => {
 }
 
 
+let restartGame = () => {
+    door1.src = closedDoorPath;
+    door2.src = closedDoorPath;
+    door3.src = closedDoorPath;
+    buttonChange.innerHTML = "<p>Good Luck!</p>"
+    doorCount = 3;
+    currentlyPlaying = true;
+    randomDoorNumber();
+}
 
-randomDoorNumber();
-continuePlay();
+buttonChange.onclick = () => {
+    if (currentlyPlaying === false){
+    restartGame();
+    }
+}
+
+restartGame();
