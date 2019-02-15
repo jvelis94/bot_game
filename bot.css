@@ -41,6 +41,7 @@ table {
 }
 
 .game-doors {
+    width: 99.9%;
     display: flex;
     justify-content: center;
     padding: 40px 0;
@@ -84,7 +85,8 @@ table {
     .instruction-numbers {
         font-size: 1.75rem;
         padding-right: 20px;
-        color: #00ffff
+        padding-left: 15px;
+        color: #00ffff;
     }
     
     .instruction-content {
@@ -116,7 +118,8 @@ table {
     .instruction-numbers {
         font-size: 1.75rem;
         padding-right: 20px;
-        color: #00ffff
+        padding-left: 15px;
+        color: #00ffff;
     }
     
     .instruction-content {
@@ -149,13 +152,15 @@ table {
     .instruction-numbers {
         font-size: 1.5rem;
         padding-right: 20px;
-        color: #00ffff
+        padding-left: 15px;
+        color: #00ffff;
+        
     }
     
     .instruction-content {
         color: #ffffff;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: .8rem;
+        font-size: .85rem;
     }
     
     #play-button {
